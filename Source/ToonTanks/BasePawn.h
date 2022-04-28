@@ -22,26 +22,23 @@ protected:
 	UPROPERTY(VisibleDefaultsOnly)
 	int32 VisibleDefaultsOnlyInt = 5;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Speed = 400.0f;
 
 private:
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = "Pawn Components")
 	class UCapsuleComponent *CapsuleComp;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = "Pawn Components")
 	UStaticMeshComponent *BaseMesh;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = "Pawn Components")
 	UStaticMeshComponent *TurretMesh;
 
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"), Category = "Pawn Components")
 	USceneComponent *ProjectileSpawnPoint;
 
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent *PlayerInputComponent) override;
 };
