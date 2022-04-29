@@ -3354,3 +3354,6 @@ Script Stack (0 frames):
 [2022.04.29-22.44.13:888][830]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2022.04.29-22.44.13:890][830]LogUObjectHash: Compacting FUObjectHashTables data took   1.00ms
 [2022.04.29-22.44.13:928][831]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2022.04.29-23.01.51:068][383]LogEditorClassViewer: Warning: Class /Engine/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.IWBE_Blutility_C has parent /Script/Blutility.PlacedEditorUtilityBase, but this parent is not found. The Class will not be shown in ClassViewer.
+[2022.04.29-23.01.59:598][385]LogLiveCoding: Display: Starting Live Coding compile.
+[2022.04.29-23.01.59:605][385]LogSlate: Window 'Add C++ Class' being destroyed
